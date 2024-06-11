@@ -63,6 +63,7 @@ app.post("/api/Data", async (req, res) => {
 
   const { aesKeyBuffer, initialVectorBuffer, decryptedBody } = decryptedRequest;
   console.log("💬 Decrypted Request:", decryptedBody);
+  console.log("test");
 
   // TODO: Uncomment this block and add your flow token validation logic.
   // If the flow token becomes invalid, return HTTP code 427 to disable the flow and show the message in `error_msg` to the user
